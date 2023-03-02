@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <form id="form" class="form ">
+        <div class="title">Hellow!</div>
+        <div class="input-container ic1">
+            <input id="name" class="input" type="text" placeholder=" " />
+            <label for="name" class="placeholder">Name</label>
+            <div class="errorMess hide">Invalid name *</div>
+        </div>
+        <div class="input-container ic2">
+            <input id="surname" class="input" type="text" placeholder=" " />
+            <label for="surname" class="placeholder">Surname</label>
+            <div class="errorMess hide">Invalid surname *</div>
+        </div>
+        <div class="input-container ic2">
+            <input id="birthDate" class="input" type="date" placeholder=" " />
+            <label for="birthDate" class="placeholder">Birth Date</label>
+            <div class="errorMess hide">Invalid Birth Date *</div>
+        </div>
+        <div class="input-container ic2">
+            <select id="sex" class="input">
+                <option value='Female'>Female</option>
+                <option value='Male'>Male</option>
+            </select>
+            <label for="sex" class="placeholder">Sex</label>
+        </div>
+        <div class="input-container ic2">
+            <input id="phone" class="input" type="tel" placeholder=" " />
+            <label for="phone" class="placeholder">Phone number *</label>
+            <div class="errorMess hide">Invalid phone</div>
+        </div>
+        <div class="input-container ic2">
+            <input id="email" class="input " type="text" placeholder=" " />
+            <label for="email" class="placeholder">Email</label>
+            <div class="errorMess hide">Invalid email</div>
+        </div>
+        <div class="input-container ic2">
+            <input id="adresse" class="input" type="text" placeholder=" " />
+            <label for="adresse" class="placeholder">Adresse </label>
+        </div>
+        <div class="input-container ic2 radioGroup">
+            <p>Do you Agree to submit your infos?</p>
+            <div class="radioboxContainer">
+                <label>
+                    <input type="radio" id="approvalYes" class="radiobox" name="approval" value="Yes">
+                    <div class="radiobox-fake"></div>
+                    <div>Yes</div>
+                </label>
+                <Label class="labelContainer2">
+                    <input type="radio" id="approvalNo" class="radiobox" name="approval" value="No" checked />
+                    <div class="radiobox-fake"></div>
+                    <div>No</div>
+                </Label>
+            </div>
+            <p class="warning">You have not given consent to sending data about yourself</p>
+        </div>
+
+        <button id="submitBtn" class="submit">Submit</button>
+        <button id="resetBtn" type="button" class="reset">Reset</button>
+
+    </form>
+
+    <div class="thanks hide"></div>
+
+
+    <script src="./js/main.js" type="module"></script>
+
+</html>

@@ -1,0 +1,189 @@
+body {
+    align-items: center;
+    background-color: #000;
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+  }
+  
+  .form {
+    background-color: #15172b;
+    border-radius: 20px;
+    box-sizing: border-box;
+    height: auto;
+    padding: 20px;
+    width: 320px;
+  }
+  
+  .title {
+    color: #eee;
+    font-family: sans-serif;
+    font-size: 36px;
+    font-weight: 600;
+    margin-top: 30px;
+  }
+  
+  .subtitle {
+    color: #eee;
+    font-family: sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    margin-top: 10px;
+  }
+  
+  .input-container {
+    display: flex;
+    height: 50px;
+    position: relative;
+    width: 100%;
+  }
+  
+  .ic1 {
+    margin-top: 40px;
+  }
+  
+  .ic2 {
+    margin-top: 35px;
+  }
+  
+  .input {
+    background-color: #303245;
+    border-radius: 12px;
+    border: 0;
+    box-sizing: border-box;
+    color: #eee;
+    font-size: 18px;
+    height: 100%;
+    outline: 0;
+    padding: 4px 20px 0;
+    width: 100%;
+  }
+  
+  
+  .placeholder {
+    color: #65657b;
+    font-family: sans-serif;
+    left: 20px;
+    line-height: 14px;
+    pointer-events: none;
+    position: absolute;
+    transform-origin: 0 50%;
+    transition: transform 200ms, color 200ms;
+    top: 20px;
+  }
+  
+  .input:focus ~ .placeholder,
+  .input:not(:placeholder-shown) ~ .placeholder {
+    transform: translateY(-35px) translateX(10px) scale(0.75);
+  }
+  
+  .input:not(:placeholder-shown) ~ .placeholder {
+    color: #808097;
+  }
+  
+  .input:focus ~ .placeholder {
+    color: #dc2f55;
+  }
+  
+  .submit {
+    background-color: #08d;
+    border-radius: 12px;
+    border: 0;
+    box-sizing: border-box;
+    color: #eee;
+    cursor: pointer;
+    font-size: 18px;
+    height: 50px;
+    margin-top: 100px;
+    outline: 0;
+    text-align: center;
+    width: 100%;
+  }
+
+  .submitStop {
+    background-color: rgb(74, 74, 74);
+  }
+
+  .notValid {
+    border: 2px solid #dc2f55;
+  }
+
+  .errorMess {
+    color: #dc2f55;
+    font-family: sans-serif;
+    margin-top: 3px;
+    margin-left: 5px;
+  }
+
+  .reset {
+    background-color: rgb(225, 105, 143);
+    border-radius: 12px;
+    border: 0;
+    box-sizing: border-box;
+    color: #eee;
+    cursor: pointer;
+    font-size: 18px;
+    height: 50px;
+    margin-top: 10px;
+    outline: 0;
+    text-align: center;
+    width: 100%;
+  }
+
+  .hide{
+    display: none;
+  }
+
+  .radioGroup {
+    display: flex;
+    flex-direction: column;
+    color: #65657b;
+    font-family: sans-serif;
+    left: 5px;
+    margin-bottom: 20px;
+  }
+
+  .warning {
+    color: #787b65;
+  }
+  
+  .submit:active {
+    background-color: #06b;
+  }
+
+  .thanks{
+    color: #eee;
+    font-family: sans-serif;
+  }
+
+  .radiobox{
+    display: none;
+    }
+    .radiobox-fake{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 20px;
+    height: 20px;
+    border: #48337b solid 2px;
+    border-radius: 50%;
+    margin-bottom: 3px;
+}
+
+.radiobox:checked+.radiobox-fake::before{
+    content: "";
+    display: block;
+    height: 10px;
+    width: 10px;
+    background: #48337b;
+    border-radius: 50%;
+} 
+
+.radioboxContainer{
+    display: flex;
+    flex-direction: row;
+}
+
+.labelContainer2 {
+    margin-left: 10px;
+}
